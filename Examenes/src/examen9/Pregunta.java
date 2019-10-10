@@ -14,8 +14,7 @@ public class Pregunta {
     }
 
     public Pregunta() {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+            }
     
     public boolean esCorrecta (String Respuesta){
         if (Respuesta==respuesta){

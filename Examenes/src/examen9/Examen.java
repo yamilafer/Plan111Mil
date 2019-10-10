@@ -31,5 +31,9 @@ public float calificarRespuestas (List <String> respuestas){
 return NotaTotal;    
 }   
 
+public boolean Desaprobados (float PunMinimo, String TemaExamen){
+ 
+return true;//sacar    
+}
 
 }
