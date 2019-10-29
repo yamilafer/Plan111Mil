@@ -44,7 +44,18 @@ public class Curso {
     }
     
    public boolean addRespuesta (String temaExamen, String Alumno, List <String> respuestas){
-      return false;// 
+      
+       Examen AlumnoRespuesta= new Examen();
+       
+       if (alumnos.contains(Alumno) && examenes.contains(temaExamen)){
+           
+           return true; //si si contiene el alumno con el tema de examen, retorna verdadero (si esta)
+       } else{ //si no lo contiene adiciona el alumno, adiciona respuesta en la lista de respuestas en la clase examen y retorna falso
+           alumnos.add(Alumno);
+          
+           AlumnoRespuesta.addRespuestas(respuestas);
+       }
+       return false;
    }
 
 }
