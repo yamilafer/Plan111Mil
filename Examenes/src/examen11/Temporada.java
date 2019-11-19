@@ -13,6 +13,12 @@ public class Temporada {
         this.numero = numero;
     }
 
+  
+
+    public Temporada() {
+    }
+
+
     public int getNumero() {
         return numero;
     }
@@ -25,13 +31,11 @@ public class Temporada {
         episodios.add(new Episodio(numero, titulo, visto));
     }
     
-    public Episodio obtenerEpisodio ( int numEpi, int numTemp){
-        Serie NumTemp = new Serie();
-      
+    public Episodio obtenerEpisodio ( int numEpi){
+  
         for (Iterator<Episodio>iterator=this.episodios.iterator(); iterator.hasNext();){
            Episodio episod=iterator.next();
-           
-           if(episod.getNumero()==numEpi && NumTemp.getTemporadas().equals(numTemp)) {
+           if(episod.getNumero()==numEpi) {
                return episod;
            
         }

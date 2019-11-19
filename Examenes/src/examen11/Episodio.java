@@ -12,6 +12,9 @@ public class Episodio {
         this.visto = visto;
     }
 
+    public Episodio() {
+    }
+
     public int getNumero() {
         return numero;
     }
